@@ -1,0 +1,17 @@
+
+{% extends 'flatpages/default.html' %}
+
+{% load custom_censu %}
+
+{% block title %}
+<h3 align="center">Все новости</h3>
+{% endblock title %}
+
+{% block content %}
+
+<h4 align="center">{{ time_now|date:'d m y' }}</h4>
+<h4>{{ post.text|censor }}</h4>
+
+
+
+{% endblock content %}
